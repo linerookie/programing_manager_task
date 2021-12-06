@@ -81,11 +81,11 @@ void menu_add()
     } while (strlen(data.name) <= 0 || strlen(data.licence) <= 0 || strlen(data.year) <= 0);
 
     if (add_car_infor(data)) {
-        printf("[ 주소록 추가 성공! ]\n\n");
+        printf("[ 추가 성공! ]\n\n");
         last_index++;
     }
     else
-        printf("[ 주소록 추가 실패!!! ]\n\n");
+        printf("[ 추가 실패!!! ]\n\n");
 }
 
 void show_car_infor(car_infor *data)
